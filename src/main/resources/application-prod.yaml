@@ -1,0 +1,9 @@
+spring:
+  config:
+    import:
+      - classpath:application-default.yaml
+  jpa:
+    open-in-view: false
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
