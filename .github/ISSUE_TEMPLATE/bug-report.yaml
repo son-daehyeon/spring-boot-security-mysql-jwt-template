@@ -1,0 +1,98 @@
+name: 🐛 Bug Report
+description: 버그를 발견했을 때 사용하는 템플릿입니다
+title: "[BUG] "
+labels: ["bug", "status/needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        버그 리포트를 작성해 주셔서 감사합니다! 🐛
+        가능한 한 자세히 작성해 주시면 빠른 해결에 도움이 됩니다.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 🔍 버그 설명
+      description: 발견한 버그에 대해 명확하고 간결하게 설명해 주세요.
+      placeholder: 예) 로그인 시 JWT 토큰이 정상적으로 발급되지 않습니다.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🚨 우선순위
+      description: 이 버그의 심각도는 어느 정도인가요?
+      options:
+        - "Critical (서비스 중단)"
+        - "High (주요 기능 영향)"
+        - "Medium (일부 기능 영향)"
+        - "Low (사소한 문제)"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: area
+    attributes:
+      label: 🎯 영향 영역
+      description: 버그가 발생한 영역을 선택해 주세요.
+      options:
+        - label: "Authentication/Authorization (인증/권한)"
+        - label: "Database/JPA (데이터베이스)"
+        - label: "Security (보안)"
+        - label: "API (REST API)"
+        - label: "Configuration (설정)"
+        - label: "Testing (테스트)"
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔄 재현 단계
+      description: 버그를 재현하는 단계를 순서대로 적어주세요.
+      placeholder: |
+        1. 애플리케이션 실행
+        2. POST /auth/login 요청
+        3. 응답 확인
+        4. 오류 발생
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ 예상 동작
+      description: 어떤 결과를 기대했는지 설명해 주세요.
+      placeholder: JWT 토큰이 정상적으로 발급되어야 합니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ 실제 동작
+      description: 실제로 어떤 일이 일어났는지 설명해 주세요.
+      placeholder: 500 Internal Server Error가 반환됩니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 🖥️ 환경 정보
+      description: 실행 환경에 대한 정보를 제공해 주세요.
+      value: |
+        - OS: 
+        - Java Version: 
+        - Spring Boot Version: 
+        - Database: MySQL 8.0
+        - Redis Version:
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📋 로그 및 스택 트레이스
+      description: 관련된 로그나 에러 메시지를 첨부해 주세요.
+      render: shell

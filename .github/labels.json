@@ -1,0 +1,127 @@
+[
+  {
+    "name": "bug",
+    "color": "d73a4a",
+    "description": "Something isn't working"
+  },
+  {
+    "name": "feature",
+    "color": "0075ca",
+    "description": "New feature or request"
+  },
+  {
+    "name": "enhancement",
+    "color": "a2eeef",
+    "description": "Improvement to existing feature"
+  },
+  {
+    "name": "documentation",
+    "color": "0052cc",
+    "description": "Improvements or additions to documentation"
+  },
+  {
+    "name": "question",
+    "color": "d876e3",
+    "description": "Further information is requested"
+  },
+  {
+    "name": "priority/critical",
+    "color": "b60205",
+    "description": "Critical priority - needs immediate attention"
+  },
+  {
+    "name": "priority/high",
+    "color": "d93f0b",
+    "description": "High priority"
+  },
+  {
+    "name": "priority/medium",
+    "color": "fbca04",
+    "description": "Medium priority"
+  },
+  {
+    "name": "priority/low",
+    "color": "0e8a16",
+    "description": "Low priority"
+  },
+  {
+    "name": "status/needs-triage",
+    "color": "ededed",
+    "description": "Needs to be triaged and categorized"
+  },
+  {
+    "name": "status/in-progress",
+    "color": "c5def5",
+    "description": "Currently being worked on"
+  },
+  {
+    "name": "status/blocked",
+    "color": "e11d21",
+    "description": "Blocked by external dependency"
+  },
+  {
+    "name": "status/ready-for-review",
+    "color": "128a0c",
+    "description": "Ready for code review"
+  },
+  {
+    "name": "area/authentication",
+    "color": "fef2c0",
+    "description": "Authentication and authorization related"
+  },
+  {
+    "name": "area/database",
+    "color": "c2e0c6",
+    "description": "Database and JPA related"
+  },
+  {
+    "name": "area/security",
+    "color": "f9d0c4",
+    "description": "Security related issues"
+  },
+  {
+    "name": "area/api",
+    "color": "bfd4f2",
+    "description": "REST API related"
+  },
+  {
+    "name": "area/deployment",
+    "color": "d4c5f9",
+    "description": "Deployment and CI/CD related"
+  },
+  {
+    "name": "area/configuration",
+    "color": "bfdadc",
+    "description": "Configuration and setup related"
+  },
+  {
+    "name": "area/testing",
+    "color": "fad8c7",
+    "description": "Testing related"
+  },
+  {
+    "name": "good-first-issue",
+    "color": "7057ff",
+    "description": "Good for newcomers"
+  },
+  {
+    "name": "help-wanted",
+    "color": "008672",
+    "description": "Extra attention is needed"
+  },
+  {
+    "name": "wontfix",
+    "color": "ffffff",
+    "description": "This will not be worked on"
+  },
+  {
+    "name": "duplicate",
+    "color": "cfd3d7",
+    "description": "This issue or pull request already exists"
+  },
+  {
+    "name": "invalid",
+    "color": "e4e669",
+    "description": "This doesn't seem right"
+  }
+]

@@ -1,0 +1,76 @@
+name: ✨ Feature Request
+description: 새로운 기능이나 개선사항을 제안할 때 사용하는 템플릿입니다
+title: "[FEATURE] "
+labels: ["feature", "status/needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        새로운 기능 제안을 해주셔서 감사합니다! ✨
+        프로젝트 발전에 큰 도움이 됩니다.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🎯 해결하고자 하는 문제
+      description: 현재 어떤 문제나 불편함이 있나요?
+      placeholder: 예) OAuth2 로그인 기능이 없어서 소셜 로그인을 구현하기 어렵습니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 💡 제안하는 해결방법
+      description: 어떤 기능이나 변경사항을 원하시나요?
+      placeholder: 예) Google, GitHub OAuth2 로그인 기능을 추가했으면 좋겠습니다.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 📊 우선순위
+      description: 이 기능의 우선순위는 어느 정도라고 생각하시나요?
+      options:
+        - "High (중요하고 급함)"
+        - "Medium (중요하지만 급하지 않음)"
+        - "Low (있으면 좋음)"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: area
+    attributes:
+      label: 🎯 영향 영역
+      description: 이 기능이 영향을 줄 것으로 예상되는 영역을 선택해 주세요.
+      options:
+        - label: "Authentication/Authorization (인증/권한)"
+        - label: "Database/JPA (데이터베이스)"
+        - label: "Security (보안)"
+        - label: "API (REST API)"
+        - label: "Deployment (배포)"
+        - label: "Configuration (설정)"
+        - label: "Testing (테스트)"
+
+  - type: checkboxes
+    id: type
+    attributes:
+      label: 🔧 기여 유형
+      description: 이 기능을 구현할 의향이 있으신가요?
+      options:
+        - label: "직접 구현할 의향이 있습니다"
+        - label: "도움이 필요합니다 (help-wanted)"
+        - label: "초보자에게 적합합니다 (good-first-issue)"
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 대안
+      description: 다른 해결 방법이나 대안이 있다면 설명해 주세요.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 📎 추가 정보
+      description: 참고할 만한 자료나 예시가 있다면 첨부해 주세요.

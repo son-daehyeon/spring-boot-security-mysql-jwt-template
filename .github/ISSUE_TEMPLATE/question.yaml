@@ -1,0 +1,55 @@
+name: ❓ Question
+description: 사용법이나 설정에 대해 질문할 때 사용하는 템플릿입니다
+title: "[QUESTION] "
+labels: ["question", "help-wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        질문을 해주셔서 감사합니다! ❓
+        명확한 답변을 드리기 위해 자세히 작성해 주세요.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: ❓ 질문 내용
+      description: 궁금한 점을 구체적으로 설명해 주세요.
+      placeholder: 예) JWT 토큰의 만료 시간을 어�게 설정하나요?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 📂 카테고리
+      description: 질문이 어떤 영역과 관련이 있나요?
+      options:
+        - "Authentication/Authorization (인증/권한)"
+        - "Database/JPA (데이터베이스)"
+        - "Security (보안)"
+        - "API (REST API)"
+        - "Deployment (배포)"
+        - "Configuration (설정)"
+        - "Testing (테스트)"
+        - "General (일반)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: 🔍 시도해 본 것들
+      description: 이미 시도해 본 방법이나 확인한 문서가 있다면 알려주세요.
+      placeholder: 예) application.yaml에서 jwt.expiration 값을 변경해 봤지만 적용되지 않습니다.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 🖥️ 환경 정보
+      description: 실행 환경이나 설정 정보를 알려주세요.
+      value: |
+        - OS: 
+        - Java Version: 
+        - IDE: 
+        - Database:
+      render: markdown

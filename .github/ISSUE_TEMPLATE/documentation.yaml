@@ -1,0 +1,36 @@
+name: 📚 Documentation
+description: 문서 개선이나 추가가 필요할 때 사용하는 템플릿입니다
+title: "[DOCS] "
+labels: ["documentation", "status/needs-triage"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 문서 개선 내용
+      description: 어떤 문서를 개선하거나 추가해야 하는지 설명해 주세요.
+      placeholder: 예) JWT 토큰 설정에 대한 상세한 가이드가 필요합니다.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: type
+    attributes:
+      label: 📋 문서 유형
+      options:
+        - label: "README 개선"
+        - label: "API 문서 추가/수정"
+        - label: "설정 가이드"
+        - label: "코드 주석 개선"
+        - label: "예제 코드"
+        - label: "FAQ"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 📊 우선순위
+      options:
+        - "High (중요)"
+        - "Medium (보통)"
+        - "Low (낮음)"
+    validations:
+      required: true

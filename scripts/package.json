@@ -1,0 +1,10 @@
+{
+  "name": "label-sync",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node sync-labels.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^22.0.0"
+  }
+}
